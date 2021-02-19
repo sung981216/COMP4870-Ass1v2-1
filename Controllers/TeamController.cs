@@ -78,7 +78,7 @@ namespace assignment01.Controllers
             Players=Array.Empty<Player>();
         }
 
-        return View(Player+);
+        return View(Players);
   }  
 
     }
