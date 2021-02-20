@@ -27,9 +27,22 @@ namespace assignment01
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // services.AddDbContext<ApplicationDbContext>(options =>
+            //     options.UseSqlServer(
+            //         Configuration.GetConnectionString("DefaultConnection")));
+
+            var host = Configuration["DBHOST"] ?? "localhost";
+            var port = Configuration["DBPORT"] ?? "1444";
+            var password = Configuration["DBPASSWORD"] ?? "SqlExpress!";
+            var db = Configuration["DBNAME"] ?? "HockeyDB";
+
+            string connStr = $"Server=tcp:{host},{port};Database={db};UID=sa;PWD={password};";
+
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                    options.UseSqlServer(connStr));
+
+
+
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -39,7 +52,8 @@ namespace assignment01
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,
+                ApplicationDbContext context)
         {
             if (env.IsDevelopment())
             {
@@ -59,6 +73,9 @@ namespace assignment01
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            // runs the command : dotnet-ef database update
+            context.Database.Migrate();
 
             app.UseEndpoints(endpoints =>
             {
