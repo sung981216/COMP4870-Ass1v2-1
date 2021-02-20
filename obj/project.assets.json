@@ -9128,30 +9128,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sung9\\.nuget\\packages\\": {},
+    "C:\\Users\\sayed\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CST-TERM-4\\4870\\COMP4870-Ass1v2\\assignment01.csproj",
+      "projectUniqueName": "C:\\Users\\sayed\\assignment01\\assignment01.csproj",
       "projectName": "assignment01",
-      "projectPath": "C:\\CST-TERM-4\\4870\\COMP4870-Ass1v2\\assignment01.csproj",
-      "packagesPath": "C:\\Users\\sung9\\.nuget\\packages\\",
-      "outputPath": "C:\\CST-TERM-4\\4870\\COMP4870-Ass1v2\\obj\\",
+      "projectPath": "C:\\Users\\sayed\\assignment01\\assignment01.csproj",
+      "packagesPath": "C:\\Users\\sayed\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sayed\\assignment01\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\sung9\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\sayed\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

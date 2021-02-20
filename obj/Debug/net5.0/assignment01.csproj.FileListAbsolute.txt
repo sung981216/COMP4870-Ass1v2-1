@@ -326,3 +326,8 @@ C:\CST-TERM-4\4870\COMP4870-Ass1v2\obj\Debug\net5.0\assignment01.dll
 C:\CST-TERM-4\4870\COMP4870-Ass1v2\obj\Debug\net5.0\ref\assignment01.dll
 C:\CST-TERM-4\4870\COMP4870-Ass1v2\obj\Debug\net5.0\assignment01.pdb
 C:\CST-TERM-4\4870\COMP4870-Ass1v2\obj\Debug\net5.0\assignment01.genruntimeconfig.cache
+C:\Users\sayed\assignment01\bin\Debug\net5.0\dist\web.config
+C:\Users\sayed\assignment01\bin\Debug\net5.0\dist\appsettings.Development.json
+C:\Users\sayed\assignment01\bin\Debug\net5.0\dist\appsettings.json
+C:\Users\sayed\assignment01\bin\Debug\net5.0\dist\assignment01.deps.json
+C:\Users\sayed\assignment01\bin\Debug\net5.0\dist\assignment01.runtimeconfig.json
