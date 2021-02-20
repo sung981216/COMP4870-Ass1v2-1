@@ -814,6 +814,9 @@
             "assemblyVersion": "5.0.3.0",
             "fileVersion": "5.0.321.6417"
           }
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Design.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/5.0.3": {

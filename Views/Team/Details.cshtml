@@ -10,17 +10,17 @@
 
   <table class="table table-striped table-bordered">
     <tr>
-      <th>@Html.DisplayNameFor(model => model.person)</th>
-      <th>@Html.DisplayNameFor(model => model.jersey)</th>
-      <th>@Html.DisplayNameFor(model => model.position)</th>
+      <th>@Html.DisplayNameFor(model => model.person.fullName)</th>
+      <th>@Html.DisplayNameFor(model => model.jerseyNumber)</th>
+      <th>@Html.DisplayNameFor(model => model.position.name)</th>
       <th></th>
     </tr>
     @foreach (var item in Model)
     {
       <tr>
-        <td>@item.person</td>
-        <td>@item.jersey</td>
-        <td>@item.position</td>
+        <td>@item.person.fullName</td>
+        <td>@item.jerseyNumber</td>
+        <td>@item.position.name</td>
         @* <td style="text-align: center;">
           <a asp-action="Details" asp-route-id="@item.id" class="btn btn-sm btn-info">Details of team</a>
         </td>  *@
