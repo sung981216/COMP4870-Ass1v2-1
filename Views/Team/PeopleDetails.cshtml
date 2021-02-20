@@ -1,4 +1,4 @@
-@model IEnumerable<assignment01.Models.People>
+@model assignment01.Models.People
 
 @{
   ViewData["Title"] = "Player Info";
@@ -13,18 +13,21 @@
       <th>@Html.DisplayNameFor(model => model.fullName)</th>
       <th>@Html.DisplayNameFor(model => model.currentTeam.name)</th>
       <th>@Html.DisplayNameFor(model => model.currentAge)</th>
+      <th>@Html.DisplayNameFor(model => model.nationality)</th>
+      <th>@Html.DisplayNameFor(model => model.primaryPosition.name)</th>
       <th></th>
     </tr>
-    @foreach (var item in Model)
-    {
+   
       <tr>
-        <td>@item.fullName</td>
-        <td>@item.currentTeam.name</td>
-        <td>@item.currentAge</td> 
+        <td>@Model.fullName</td>
+        <td>@Model.currentTeam.name</td>
+        <td>@Model.currentAge</td> 
+        <td>@Model.nationality</td> 
+        <td>@Model.primaryPosition.name</td> 
         @* <td style="text-align: center;">
           <a asp-action="Details" asp-route-id="@item.id" class="btn btn-sm btn-info">Details of team</a>
         </td>  *@
       </tr>
-      }
+      
   </table>
 </div>
