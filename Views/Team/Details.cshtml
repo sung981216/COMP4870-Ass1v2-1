@@ -21,9 +21,9 @@
         <td>@item.person.fullName</td>
         <td>@item.jerseyNumber</td>
         <td>@item.position.name</td>
-        @* <td style="text-align: center;">
-          <a asp-action="Details" asp-route-id="@item.id" class="btn btn-sm btn-info">Details of team</a>
-        </td>  *@
+        <td style="text-align: center;">
+          <a asp-action="PeopleDetails" asp-route-id="@item.person.id" class="btn btn-sm btn-info">Details of Player</a>
+        </td> 
       </tr>
       }
   </table>

@@ -19,10 +19,13 @@ namespace assignment01.Controllers
         private readonly IHttpClientFactory _clientFactory;
         public IEnumerable<Team> Teams { get; set; }
         public IEnumerable<Player> Players { get; set; }
+        public People Peoples { get; set; }
         
         public ResponseDS ResponseDS { get; set; }
 
         public ResponsePlayerDS ResponsePlayerDS {get; set;}
+
+        public PeopleResponseDS PeopleResponseDS {get; set;}
 
         public TeamController(ILogger<TeamController> logger, IHttpClientFactory clientFactory)
         {
@@ -80,6 +83,31 @@ namespace assignment01.Controllers
 
         return View(Players);
   }  
+    public async Task<IActionResult> PeopleDetails(int id) {
+
+
+        var message = new HttpRequestMessage();
+        message.Method = HttpMethod.Get;
+        message.RequestUri = new Uri($"{BASE_URL}/people/{id}");
+        message.Headers.Add("Accept", "application/json");
+
+        var client = _clientFactory.CreateClient();
+
+        var response = await client.SendAsync(message);
+      
+
+        if (response.IsSuccessStatusCode) {
+            var responseStream = await response.Content.ReadAsStreamAsync();
+            PeopleResponseDS = await JsonSerializer.DeserializeAsync<PeopleResponseDS>(responseStream);
+            Peoples = PeopleResponseDS.people.ElementAt(0);
+
+        } else {
+            // Peoples=Array.Empty<People>();
+        }
+
+        return View(Peoples);
+  }    
+
 
     }
 }
