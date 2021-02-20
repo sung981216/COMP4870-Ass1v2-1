@@ -56,12 +56,12 @@ namespace assignment01.Controllers
         return View(Teams);
   }
 
-    public async Task<IActionResult> Details() {
+    public async Task<IActionResult> Details(int id) {
 
 
         var message = new HttpRequestMessage();
         message.Method = HttpMethod.Get;
-        message.RequestUri = new Uri($"{BASE_URL}/teams");
+        message.RequestUri = new Uri($"{BASE_URL}/teams/{id}/roster");
         message.Headers.Add("Accept", "application/json");
 
         var client = _clientFactory.CreateClient();
