@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace assignment01.Controllers
 {
+    [Authorize]
     public class TeamController : Controller
     {
         const string BASE_URL = "https://statsapi.web.nhl.com/api/v1/";
