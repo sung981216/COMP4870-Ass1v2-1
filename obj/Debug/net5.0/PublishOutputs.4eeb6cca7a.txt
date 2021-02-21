@@ -35,8 +35,13 @@ C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\wwwroot\lib\jquery\dist\jquery.js
 C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\wwwroot\lib\jquery\dist\jquery.min.js
 C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\wwwroot\lib\jquery\dist\jquery.min.map
 C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\wwwroot\lib\jquery\LICENSE.txt
+C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\dist\web.config
 C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\appsettings.Development.json
 C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\appsettings.json
+C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\dist\appsettings.Development.json
+C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\dist\appsettings.json
+C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\dist\assignment01.deps.json
+C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\dist\assignment01.runtimeconfig.json
 C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\assignment01.dll
 C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\assignment01.deps.json
 C:\CST-TERM-4\4870\COMP4870-Ass1v2\dist\assignment01.runtimeconfig.json

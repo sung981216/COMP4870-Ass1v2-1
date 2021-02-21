@@ -8,7 +8,7 @@ using assignment01.Models;
 using assignment01.DS;
 using System.Net.Http;
 using System.Text.Json;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace assignment01.Controllers
 {
@@ -33,7 +33,7 @@ namespace assignment01.Controllers
             _clientFactory = clientFactory;
         }
 
-        
+    [Authorize] 
     public async Task<IActionResult> Index() {
 
 
@@ -58,7 +58,7 @@ namespace assignment01.Controllers
 
         return View(Teams);
   }
-
+    [Authorize] 
     public async Task<IActionResult> Details(int id) {
 
 
@@ -83,6 +83,7 @@ namespace assignment01.Controllers
 
         return View(Players);
   }  
+    [Authorize] 
     public async Task<IActionResult> PeopleDetails(int id) {
 
 
